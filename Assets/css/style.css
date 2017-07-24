@@ -82,6 +82,7 @@ header li + li {
 	background-image: url("../images/concrete_subtle.png");
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	position:relative;
+	display: block;
 }
 
 #container h2, h3 {
@@ -118,6 +119,7 @@ header li + li {
 
 #about_me img {
 	margin-left: 0;
+
 }
 
 #connect {
@@ -303,5 +305,44 @@ form input[type=submit]:focus{
   background-color:#4F45EA;
 }
 
+@media screen and (max-width: 980px) {
+    body {
+        background-color: red;
+    }
 
+}
 
+@media screen and (max-width: 768px) {
+    body {
+        background-color: pink;
+    }
+    .navbar {
+	float:middle;
+    }
+
+    #about {
+    	float:none;
+    	top:50;
+    	left:50;
+    }
+
+    #about_me image {
+    	display: block;
+    	width:100%;
+    	margin:auto;
+    }
+
+    #connect {
+    	height:;
+    	widows:;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        background-color: lightgreen;
+    }
+    .navbar {
+	float:none;
+    }
+}
