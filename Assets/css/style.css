@@ -1,348 +1,280 @@
 * {
-	/*box-sizing: border-box;*/
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    /*border: 1px solid red;*/
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+a {
+	color: #777777;
 	text-decoration: none;
+}
+a:visited {
+	color: #777777;
+}
+
+a:hover {
+	color: #4c4b4b;
 }
 
 body {
-	margin:0;
-	height: 100%;
+	position: relative;
+	max-width: 960px;
+	height: 800px;
+	background-image: url("../images/concrete_subtle.png");
+	margin: auto;
 }
 
-.wrapper {
-	width: 960px;
-	margin: 0 auto;
-
-}
-
-.navbar {
-	margin:0;
-	height: 80px;
+#header {
+	background: #fff;
+	height: 70px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #777777;
 	border-bottom: 2px solid #cccccc;
 }
 
-#name {
-	
-	line-height: 40px;
-	vertical-align: middle; 
-	height: 78px;
+#brand {
+	height: 70px;
+}
+
+#brand h1 {
 	width: 240px;
-	border: 2px solid #4aaaa5;
-	background-color: #4aaaa5;
-	color: #FFFFFF;
+	padding: 17px;
+	margin: 0px 0px 0px 40px;
+	font-size: 2.2em;
+	background: #4aaaa5;
 	text-align: center;
-	font-family: Georgia, Times, "Times New Roman", serif;
-	position: relative;
-	display: block;	
-	top: 0px;
-	left: 80px;
-	float:left;
+	color: #fff;
 }
 
-header ul{
-	height: 25px;
-	line-height: 40px;
-	list-style-type: none;
-	margin-top: 20px;
-	margin-right:120px;
-	padding: 0;
-	overflow: hidden;
-	float:right;
-	position: relative;
-	top: 10px;
-	font-size: 20px;
+#nav {
+	height: 70px;
+	padding-right: 50px;
+	text-align: right;
+	line-height: 70px;
 }
 
-header li {
-    float: left;    
-    text-decoration: none;
-    height: 50px;
-}
-
-header li a {
-	height: 20px;
-	line-height: 0px;
-    display: block; 
-    color: #777777;
-    text-align: right;
-    margin-right: 0px;
-    padding: 10px 15px;    
-}
-
-a:link {
-	text-decoration: none;
-}
-
-header li + li {
-	border-left: 1px solid #dddddd;
-}
-
-#container {
-	height: 640px;
-	width: 100%;
-	background-image: url("../images/concrete_subtle.png");
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	position:relative;
-	display: block;
-}
-
-#container h2, h3 {
-	color: #4aaaa5;
-	font-family: Georgia, Times, "Times New Roman", serif;
-	margin-bottom:10px;
-}
-
-#about {
-	width: 480px;
-	height: auto;
-	color: #777777;
-	background-color: #ffffff;
-	border: 1px solid #dddddd;
-	position: absolute;
-	top:50px;
-	left: 50px;
-	float: left;
-}
-
-#about h2 {
-	padding-left: 20px;
-}
-
-#about hr {
-	border:2px solid #dddddd;
-	margin:10px 20px 20px 20px;
-}
-
-#about_me {
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-#about_me img {
-	margin-left: 0;
-
+#nav span {
+	padding: 5px;
+	font-size: 1.05em;
 }
 
 #connect {
+	background: #fff;
 	color: #4aaaa5;
-	width: 240px;
-	border:1px solid #dddddd;
-	padding-left:20px;
-	padding-right: 20px;
-	padding-bottom: 20px;
 	text-align: center;
-	background-color: #ffffff;
-	position: absolute;
-	top: 50px;
-	left: 580px;
-	float: left;
+	font-size: 1.4em;
+	margin: 35px 35px 15px 15px;
+	padding: 15px;
 }
 
-#connect hr {
-	border:1px solid #dddddd;
-	margin-bottom: 20px;
+#connect h3 {
+	font-weight: bold;
+	margin-bottom: 14px;
 }
 
-/*  -- Contact Section --  */
-
-#contact {
-	width: 480px;
-	height: auto;
-	color: #777777;
-	background-color: #ffffff;
-	border: 1px solid #dddddd;
-	position: absolute;
-	top:50px;
-	left: 50px;
-	float: left;
-
+#connect img {
+	margin:	5px 2px 0px 2px;
 }
 
-#contact hr {
-	border:2px solid #dddddd;
-	margin:10px 20px 20px 20px;
-}
-
-#contact h2 {
-	padding-left:20px;
-}
-
-/*  Portfolio Section  */
-
-
-
-.portfolio {
-	width: 480px;
-	height: auto;	
-	color: #777777;
-	border:1px solid #dddddd;
-	background-color: #ffffff;
-	position: absolute;
-	top:50px;
-	left: 50px;
-	float: left;
-
+#footer {
+	position: relative;
+	bottom: 0px;
+	background: #666666;
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+	color: #fff;
+	border-top: 2px solid #4aaaa5;
 
 }
 
-.portfolio h2 {
-	padding-left: 20px;
-}
-.portfolio hr {
-	border:2px solid #dddddd;
-	margin:10px 20px 20px 20px;
-	}
-
-/*  --  Portfolio List  --	*/
 
 
-
-
-
-.portfolio li {
-	float: left;
-	width: 45%;
-	height:150px;
-	margin:0px 0px 0px -8px;
-}
-
-.portfolio li:nth-child(even) {
-	margin-left: 20px;
-}
-
-.portfolio img {
-	width: 100 	%;	
-	padding: 0px;
+#about {
+	background: #fff;
+	height: 1200px;
+	margin: 35px 15px 15px 35px;
+	padding: 15px;
 	
 }
 
-.port_name{
-	width:100%;
+#about h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0px 0px 5px 15px;
+	color: #4aaaa5;
+}
+
+#about hr {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#about img {
+	float: left;
+	margin: 15px 15px 0px 15px;
+	
+}
+
+#about p {
+	line-height: 150%;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-top: 10px;
+	text-align: justify; 
+
+}
+
+
+
+#portfolio {
+	background: #fff;
+	height: 590px;
+	margin: 35px 15px 15px 35px;
+	padding: 15px;
+	overflow: auto;
+
+}
+
+#portfolio h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0px 0px 5px 15px;
+	color: #4aaaa5;
+}
+
+#portfolio hr {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#portfolio li {
+	width: 45%;
+	height: 150px;
+	margin: 10px 0px 10px 3.2%;
+	float: left;
+}
+
+#portfolio img {
+	width: 100%;
+	height: 100%;
+}
+
+.portLabel {
+	color: #fff;
+	background-color: #4aaaa5;
 	line-height: 40px;
 	text-align: center;
-	background-color: #4aaaa5;
-	color:#ffffff;
-	font-family: Times;
-	position:relative;
-	bottom: 50px;
-
-}
-
-/*  Footer  */
-
-footer {
-	color: #dddddd;
-	border-top: 10px solid #4aaaa5;
-	background-color: #666666;
-	height: 100px;
-	width:100%;
-	line-height: 60px;
-	text-align: center;
-	vertical-align: middle;
-	left: 0px;
-	bottom: 0px;
 	position: relative;
+	bottom: 53px;
 
 }
 
-/*Contact Page*/
 
-form label {
-	font-size: 20px;
-	margin-left: 20px;
+
+#contact {
+	background: #fff;
+	height: 540px;
+	margin: 35px 15px 15px 35px;
+	padding: 15px;
+	overflow: auto;
 }
 
-form input {
-  width: 420px;  
-  padding: 10px;
-  margin: 10px 20px 20px 20px;
-  border: 1px solid #dddddd;
-  color: #777777;
-  }
-
-  input::placeholder {
-  	color:#CBC8C8;
-  }
-
- input:focus {
-  background-color: #dddddd;
+#contact h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0px 0px 5px 15px;
+	color: #4aaaa5;
 }
 
-#message{
-  width: 420px;
-  height:100px;
-  padding: 10px;
-  margin: 10px 20px 20px 20px;
-  border: 1px solid #dddddd;
-  color: #777777;
-  vertical-align:text-top;
-  word-wrap:break-word;
-  resize: vertical;
-
+#contact hr {
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
-#message:focus {
-  background-color:#EDEBEC ; 
+#contact form {
+	margin-left: 15px;
+	color: #777777;
 }
 
-#message::placeholder {
-  	color:#CBC8C8;	
+#contact form input {
+	color: #777777;
+	width: 97%;
+	margin-bottom: 10px;
+	margin-top: 3px;
 }
 
-form input[type=submit]{
-  width:150px;
-  padding:10px;
-  background-color:#4aaaa5;
-  color:white;
-  font-weight:bold;
+#contact span {
+	font-size: 1.1em;
 }
 
-form input[type=submit]:hover{
-  background-color:#1B1585;
+#name {
+	height: 30px;
+	margin-bottom: 5px;
 }
 
-
-form input[type=submit]:focus{
-  background-color:#4F45EA;
+#name[type=text] {
+	padding-left: 5px;
+	font-size: 13px; 
+	opacity: 0.7;
 }
 
-@media screen and (max-width: 980px) {
-    body {
-        background-color: red;
-    }
-
+#email[type=text] {
+	padding-left: 5px; 
+	font-size: 13px;
+	opacity: 0.7;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        background-color: pink;
-    }
-    .navbar {
-	float:middle;
-    }
-
-    #about {
-    	float:none;
-    	top:50;
-    	left:50;
-    }
-
-    #about_me image {
-    	display: block;
-    	width:100%;
-    	margin:auto;
-    }
-
-    #connect {
-    	height:;
-    	widows:;
-    }
+#message[type=text] {
+	line-height: 0px;
 }
 
-@media screen and (max-width: 640px) {
-    body {
-        background-color: lightgreen;
-    }
-    .navbar {
-	float:none;
-    }
+#email {
+	height: 30px;
+	margin-bottom: 5px;	
+}
+
+#message {
+	height: 185px;
+	margin-bottom: 10px;
+	
+}
+
+#submit[type=submit] {
+	color: #fff;
+	width: 70px;
+ 	height: 30px;
+ 	background: #4aaaa5;
+ 	border: none;
+ 	margin-top: 5px;
+ 	border-radius: 2px;
+ 	font-size: 13px;
+}
+
+#submit:hover {
+	cursor: pointer;
+	background-color: #3a8783;
 }

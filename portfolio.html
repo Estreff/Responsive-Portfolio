@@ -1,85 +1,90 @@
+
 <!DOCTYPE html>
-<html>
+
+<html lang="en”>
+
 <head>
-	<title>Erik Streff Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <title>ES Responsive Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
 </head>
 <body>
-	<div class="wrapper">
-		<header class="navbar">
-			<div id=name><h1>Erik Streff</h1></div>
-				<ul>
-					<li><a class="active" href="index.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-				
-		</header>
 
+<div class="row" id="header">
 
-		<div id=container>
-			<section class="portfolio">
-				<h2>Portfolio</h2>
-				<hr>
+    <div class="col-4" id="brand">
+        <h1>Erik Streff</h1>
+    </div>
 
-				<ul>
-					
-					<li>
-					<a href="#"><img src="http://lorempixel.com/198/125/technics/1/cc/" height="125px">
-					<div class="port_name">Hangman</div>
-					</a>
-					</li>
+    <div class="col-8" id="nav">
+        <a href="index.html"><span>About</span></a>
+        <span>|</span>
+        <a href="contact.html"><span>Contact</span></a>
+        <span>|</span>
+        <a href="portfolio.html"><span>Portfolio</span></a>
+    </div>
+</div>
 
-					<li>
-					<a href="#">
-					<img src="http://lorempixel.com/198/125/technics/2/cc/" height="125px">
-					<div class="port_name">RPG Game</div>
-					</a></li>
-					
-					<li>
-					<a href="#">
-					<img src="http://lorempixel.com/198/125/technics/5/cc/" height="125px">
-					<div class="port_name">Trivia Game</div>
-					</a></li>
-					
-					<li>
-					<a href="#">
-					<img src="http://lorempixel.com/198/125/technics/7/cc/" height="125px">
-					<div class="port_name">Rutgers Info Widget</div>
-					</a></li>
-				
-					<li>
-					<a href="#">
-					<img src="http://lorempixel.com/198/125/technics/9/cc/" height="125px">
-					<div class="port_name">Rock Paper Scissors</div>
-					</a></li>
-					
-					<li>
-					<a href="#">
-					<img src="">
-					<div></div>	
-					</a></li>
-					
-				</ul>	
-				
-			</section>
-			
-			<section id="connect">
-					<h3>Connect with Me</h3>
-					<hr>
-					<a href="https://github.com/estreff"><img src="assets/images/github_square_black-128.png" height="75px" width="75px"></a>
-					<a href="https://linkedin.com/in/estreff"><img src="assets/images/linkedin_square_color-128.png" height="75px" width="75px"></a>
-					<a href="https://stackoverflow.com/users/8128978/erik-streff"><img src="assets/images/stackoverflow-orange-128.png" height="75px" width="75px"></a>
-			</section>
-		</div>
+<div class="row">
+    <div class="col-8">   
+        <div id="portfolio">
+            <h2>Portfolio</h2>
+            <hr>
+                
+            <ul>
+                <li>
+                    <a href="#"><img src="http://lorempixel.com/output/technics-q-c-400-200-1.jpg" height="110px"/> 
+                    <div class="portLabel">Hangman</div>   
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="http://lorempixel.com/output/technics-q-c-400-200-2.jpg" height="110px"/> 
+                    <div class="portLabel">RPG Game</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="http://lorempixel.com/output/technics-q-c-400-200-3.jpg" height="110px"/> 
+                    <div class="portLabel">Trivia Game</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="http://lorempixel.com/output/technics-q-c-400-200-4.jpg" height="110px"/> 
+                    <div class="portLabel">Rutger Info Widget</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="http://lorempixel.com/output/technics-q-c-400-200-5.jpg" height="110px"/> 
+                    <div class="portLabel">Rock Paper Scissors</div>
+                    </a>
+                </li>
+            </ul>     
+              
+        </div>
+    </div>
 
+    <div class="col-4">
+        <div id="connect">
+            <h3>Connect with Me</h3>
+            <hr>
+            <a href="https://github.com/estreff" target="_blank"><img src="assets/images/github_square_black-128.png" height="51"/></a>
+            <a href="https://www.linkedin.com/in/estreff/" target="_blank"><img src="assets/images/linkedin_square_color-128.png" height="51"/></a>
+            <a href="https://stackoverflow.com/users/8128978/erik-streff" target="_blank"><img src="assets/images/stackoverflow-orange-128.png" height="51"/></a>
+        </div>
+    </div>
 
-	  	<footer>
-	      <p><span> &copy; 2017 Written and Coded by Erik Streff</span></p>
-	    </footer>
-	</div>
+</div>
 
+<div class="row">
+    <div class="col-12" id="footer">
+        <p>&copy; 2017 Written and Coded by Erik Streff</p>  
+    </div>
+</div>     
 
 </body>
 </html>

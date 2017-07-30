@@ -1,48 +1,79 @@
-	<!DOCTYPE html>
-<html>
-<head>
-	<title>Erik Streff Portfolio</title>
-		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-		<link rel="stylesheet" type="text/css" href="..CSS Files/responsive_columns.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!DOCTYPE html>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en”>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <title>ES Responsive Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
 </head>
 <body>
-	<div class="wrapper">
-		<header class="navbar">
-			<div id=name><h1>Erik Streff</h1></div>
-				<ul>
-					<li><a class="active" href="index.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-				
-		</header>
 
+<div class="row" id="header">
 
-		<div id=container>
-			<section id="about">
-				<h2>About Me</h2>
-				<hr>
-				
-				<p id="about_me"><img src="assets/images/ES Image.jpg" hspace="20px">Erik Streff is currently a student at Denver University Coding Boot Camp.  When he is completed he looks to take the education and experience to become a Full Stack Developer.  With this knowledge he will help customers through the creative and development sides of building a website that will fulfill their needs.  He is energetic and will listen to all feedback and implement in the best way possible for users.
-				</p>
-			</section>
+    <div class="col-4" id="brand">
+        <h1>Erik Streff</h1>
+    </div>
+
+    <div class="col-8" id="nav">
+        <a href="index.html"><span>About</span></a>
+        <span>|</span>
+        <a href="contact.html"><span>Contact</span></a>
+        <span>|</span>
+        <a href="portfolio.html"><span>Portfolio</span></a>      
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-8">
+        <div id="about">
+            <h2>About Me</h2>
+            <hr>
+            <img src="assets/images/ES Image.jpg" height="200"/> 
+            <br>
+			<br>
+			 <i><b>“Never give up! Failure and rejection are only the first step to succeeding.</b>”<br>
+			<span class="quote">– Jim Valvano</span></i></p>
+
+			<br>
+			<br>
+			<br>
+
+			<p> Success means something different to everyone. For me success is doing work that challenges me to be creative and solve problems while helping and serving others. Success is also being able to spend time with my family, playing golf and having time to catch up with friends. What is success for you? I hope you will <a href="contact.html">connect with me</a> to share what success means to you. </p>
+
+			<p>In the meantime, let me introduce myself. My name is Erik Streff and I am a student at <a href="https://codingbootcamp.du.edu/"> Coding Boot Camp at Denver University</a>, a part-time Software Support and Customer Success Manager at <a href="http://www.cairnstack.com/">Carinstack Software</a> and a part-time stay at home dad to my 8-month old son (and so much more).</p>
+
+			<p>After nearly 17 years of retail, rental and warehouse management at Vail Resorts I left the comforts of “corporate” culture to work at a small SaaS company, Cairnstack Software, who specializes in inventory management software, <a href="http://www.trxio.com/">TRXio</a>. During my time at Cairnstack, I began to realize just how much I enjoyed and wanted to learn more about software development and programming. I have always had a knack for analyzing data, designing systems, writing complex Excel queries and process and flow optimization. But being immersed in a lean SaaS company and able to work one-on-one with the fulltime staff developer made me realize that development was more than task to be completed, it is a passion to be pursued and something I wanted to do full-time. Enter Coding Boot Camp and dedicating the next 6-months to furthering my education and expanding my skills.</p>
+
+			<p>So here I am, not starting over but taking the next step in my life’s journey. I am a student, a father, a professional and a soon-to-be full stack developer. When my education is complete I plan to use all that I know and all that I am to find a position helping businesses build amazing backend systems with the very best user interface to deliver exceptional experiences for their customers. Whether it is a website, an app, a software program or some new technology that is yet to be invented --- count me in – although there may be a few failures along the way, success is always in reach and I won’t give up.</p>
 			
-			<section id="connect">
-					<h3>Connect with Me</h3>
-					<hr>
-					<a href="https://github.com/estreff"><img src="assets/images/github_square_black-128.png" height="75px" width="75px"></a>
-					<a href="https://linkedin.com/in/estreff"><img src="assets/images/linkedin_square_color-128.png" height="75px" width="75px"></a>
-					<a href="https://stackoverflow.com/users/8128978/erik-streff"><img src="assets/images/stackoverflow-orange-128.png" height="75px" width="75px"></a>
-			</section>
-		</div>
+			<p>What does success mean to you? I want to know. Connect with me and let’s find out together.</p> 
+        </div>
+    </div>
 
+    <div class="col-4">
+        <div id="connect">
+            <h3>Connect with Me</h3>
+            <hr>
+            <a href="https://github.com/estreff" target="_blank"><img src="assets/images/github_square_black-128.png" height="51"/></a>
+            <a href="https://www.linkedin.com/in/estreff/" target="_blank"><img src="assets/images/linkedin_square_color-128.png" height="51"/></a>
+            <a href="https://stackoverflow.com/users/8128978/erik-streff" target="_blank"><img src="assets/images/stackoverflow-orange-128.png" height="51"/></a>
+        </div>
+    </div>
 
-	  	<footer>
-	      <p><span> &copy; 2017 Written and Coded by Erik Streff</span></p>
-	    </footer>
-	</div>
+</div>
+
+<div class="row">
+    <div class="col-12" id="footer">
+        <p>&copy; 2017 Written and Coded by Erik Streff</p>  
+    </div>
+</div>
+ 
 </body>
 </html>
