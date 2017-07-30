@@ -95,6 +95,10 @@ body {
 	margin-bottom: 14px;
 }
 
+#connect hr {
+	border:2px solid #dddddd;
+}
+
 #connect img {
 	margin:	5px 2px 0px 2px;
 }
@@ -129,6 +133,7 @@ body {
 }
 
 #about hr {
+	border:2px solid #dddddd;
 	margin-left: 15px;
 	margin-right: 15px;
 }
@@ -167,6 +172,7 @@ body {
 }
 
 #portfolio hr {
+	border:2px solid #dddddd;
 	margin-left: 15px;
 	margin-right: 15px;
 }
@@ -211,6 +217,7 @@ body {
 }
 
 #contact hr {
+	border:2px solid #dddddd;
 	margin-left: 15px;
 	margin-right: 15px;
 }
